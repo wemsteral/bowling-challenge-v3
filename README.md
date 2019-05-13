@@ -1,6 +1,4 @@
-
-Bowling Challenge
-=================
+# Bowling Challenge
 
 ## The Task
 
@@ -10,20 +8,12 @@ A bowling game consists of 10 frames in which the player tries to knock down the
 
 ## Approach
 
-I spent the first day and a half planning and researching how bowling is scored as well as diagramming. I pinned down my work into chapters:
-
-0. Make the frame class capable of taking two rolls
+0. Make the frame class capable of taking two rolls and give it a 'bonus' property dependent on the next frame (in the event of spare or strike)
 1. Make a game class which can add the total of the frames without spares or strikes
-2. Add spare logic
-3. Add strike logic
-4. Add the ~mysterious tenth round~
-5. Do some jquery
-
-### ... you didn't do 4
-
-Had I had more time it would have been great to add in the final round. It's highly likely I would have made a FinalFrame class and instantiated it within Grame at the tenth frame. Putting the logic for it within the existing frame class seems pretty messy.
-
-Also, my approach really limited my ability to easy map this onto a front end. I feel as if I should have started intertwining the front end with the business logic from the start rather than leaving them as two isolated steps.
+1. Add spare logic (adds to bonus property of frame)
+1. Add strike logic (same here)
+1. Add the tenth round (pushes an extra frame into the initial array of frames if last frame === 10)
+1. ~Do some jquery~
 
 ### How to use
 
